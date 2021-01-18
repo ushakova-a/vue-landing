@@ -42,6 +42,11 @@ module.exports = {
             }
         },
         {
+            // Pug
+            test: /\.pug$/,
+            loader: 'pug-plain-loader'
+        },
+        {
             test: /\.(png|jpg|gif|svg)$/,
             use: {
                 loader: 'file-loader',
@@ -109,7 +114,7 @@ module.exports = {
             '~': PATHS.src, // Example: import Dog from "~/assets/img/dog.jpg"
             '@': `${PATHS.src}/js`, // Example: import Sort from "@/utils/sort.js"
             vue$: 'vue/dist/vue.js'
-          }
+        }
     },
     plugins: [
         new VueLoaderPlugin(),

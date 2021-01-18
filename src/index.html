@@ -192,42 +192,10 @@
             <div class="dash mb-4 mb-md-5 mx-auto"></div>
 
             <div class="row mb-5">
-                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
-                    <div class="card ft-card">
-                        <div class="bg-white" style="height: 270px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title ft-card__title">Semf Ucuk</h5>
-                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
-                    <div class="card ft-card">
-                        <div class="bg-white" style="height: 270px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title ft-card__title">Dik Adalin</h5>
-                            <p class="card-text ft-card__subtitle">Engineering</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
-                    <div class="card ft-card">
-                        <div class="bg-white" style="height: 270px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title ft-card__title">Card title</h5>
-                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
-                    <div class="card ft-card">
-                        <div class="bg-white" style="height: 270px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title ft-card__title">Card title</h5>
-                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
-                        </div>
-                    </div>
-                </div>
+                <team-item title="Semf Ucuk" subtitle="Ceo & founder"></team-item>
+                <team-item title="Dik Adalin" subtitle="Engineering"></team-item>
+                <team-item title="Jeng Kol" subtitle="Designer"></team-item>
+                <team-item title="Pet Romak" subtitle="Marketing"></team-item>
             </div>
 
             <p class="text-center">
@@ -285,7 +253,7 @@
                 <span class="ft ft-quotes"></span>
             </div>
 
-            <div id="carousel-reviews"
+            <div id="carousel-reviews" v-if="show"
                 class="row position-relative justify-content-center align-items-center flex-column">
                 <div class="col-lg-8 mb-5">
 

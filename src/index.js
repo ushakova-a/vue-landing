@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import { NavbarPlugin, ModalPlugin } from 'bootstrap-vue';
+// import TeamItem from './templates/team/team.vue';
+import { TeamItem } from './templates/team';
 
 
 
@@ -10,6 +12,8 @@ import './scss/spritesheet.scss';
 
 Vue.use(NavbarPlugin);
 Vue.use(ModalPlugin);
+
+// Vue.component('team-item', TeamItem);
 
 const navigation = new Vue({
   el: '#navigation',
@@ -25,7 +29,14 @@ const navigation = new Vue({
   }
 });
 
-const StoryModal = new Vue({
+const team = new Vue({
+  el: '#teams',
+  components: {
+    TeamItem
+  }
+});
+
+const storyModal = new Vue({
   el: '#story',
   data: {
     modalShow: false

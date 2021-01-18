@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { VueAgile } from 'vue-agile';
 import { slides } from './slides';
-import { BIcon, BIconArrowUp, BIconChevronLeft, BIconChevronRight } from 'bootstrap-vue';
+import { BIcon, BIconChevronLeft, BIconChevronRight } from 'bootstrap-vue';
 
 const ReviewsCarousel = new Vue({
   el: '#carousel-reviews',
@@ -14,6 +14,7 @@ const ReviewsCarousel = new Vue({
 
   data() {
     return {
+      show: false,
       refs: '',
       slides,
 
@@ -60,6 +61,10 @@ const ReviewsCarousel = new Vue({
       this.$refs.thumbnails.goTo(i);
     }
   },
+
+  mounted() {
+    this.show = true;
+  }
 
 });
 

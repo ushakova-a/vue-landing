@@ -5,8 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
-@import url("@splidejs/splide/dist/css/themes/splide-default.min.css");
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -200,40 +198,6 @@ p {
     @include media-breakpoint-up(xl) {
       @include make-col(2);
     }
-  }
-}
-
-.VueCarousel-slide {
-  position: relative;
-  background: #42b983;
-  color: #fff;
-  font-family: Arial;
-  font-size: 24px;
-  text-align: center;
-  min-height: 100px;
-}
-
-.label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.ft-card {
-  border-color: white;
-  color: #fff;
-
-  &__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  &__subtitle {
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: center;
   }
 }
 
