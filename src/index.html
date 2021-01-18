@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend-test</title>
+</head>
+
+<body class="page">
+    <header class="page__header d-flex flex-column align-items-center text-white">
+        <div id="navigation" class="w-100">
+            <b-navbar toggleable="lg" type="dark">
+                <div class="container">
+                    <b-navbar-brand href="#">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </b-navbar-brand>
+
+                    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+                    <b-collapse id="nav-collapse" is-nav>
+                        <b-navbar-nav class="ml-auto">
+                            <b-nav-item class="text-uppercase" href="#">
+                                Home
+                            </b-nav-item>
+                            <b-nav-item class="text-uppercase" href="#about">
+                                About
+                            </b-nav-item>
+                            <b-nav-item class="text-uppercase" href="#expertise">
+                                Expertise
+                            </b-nav-item>
+                            <b-nav-item class="text-uppercase" href="#works">
+                                Works
+                            </b-nav-item>
+                            <b-nav-item class="text-uppercase" href="#reviews">
+                                People say
+                            </b-nav-item>
+                            <b-nav-item class="text-uppercase" href="#contact">
+                                Contact
+                            </b-nav-item>
+                        </b-navbar-nav>
+                    </b-collapse>
+                </div>
+            </b-navbar>
+        </div>
+
+        <div class="wrapper my-auto">
+            <div class="container">
+                <h1 class="text-white text-center">We Are Awesome Creative Agency</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p>
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                            Aenean
+                            sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+                            id elit.
+                            Duis
+                            sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                        </p>
+                        <button class="btn btn-outline-primary text-uppercase">Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="page__section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <div class="mb-4 mb-lg-0 text-center">
+                        <div class="ft ft-left"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="text-uppercase">Our story</h2>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                        elit. Duis sed odio sit amet nibh vulputate cursus
+                    </p>
+                    <p>
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                        vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos.
+                    </p>
+                    <div>
+                        <button class="btn btn-outline-primary text-uppercase">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page__section page__section--background-1 d-flex align-items-center justify-content-center"
+        id="story">
+        <div class="container text-center">
+            <div class="mb-4">
+                <a class="btn-play" href="#" v-on:click.prevent @click="modalShow = !modalShow">
+                    <span class="ft ft-play-icon"></span>
+                </a>
+            </div>
+            <h2 class="h5 text-uppercase mb-0">WATCH OUR STORY</h2>
+
+            <b-modal title="OUR STORY" v-model="modalShow" size="lg" hide-footer>
+                <iframe style="max-width: 100%; width: 100%; height: 330px;"
+                    src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </b-modal>
+        </div>
+    </section>
+    <section class="page__section" id="expertise">
+        <div class="container">
+            <h2 class="text-uppercase text-center mb-2">Expertise</h2>
+            <p class="text-center mb-3">
+                Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            </p>
+
+            <div class="dash mb-4 mb-md-5 mx-auto"></div>
+
+            <div class="tiles">
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-1 mb-4"></i>
+                        <div class="tile-item__title">WEB DESIGN & DEVELOPMENT</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-2 mb-4"></i>
+                        <div class="tile-item__title">BRANDING IDENTITY</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-3 mb-4"></i>
+                        <div class="tile-item__title">MOBILE APP</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-4 mb-4"></i>
+                        <div class="tile-item__title">SEARCH ENGINE OPTIMIZATION</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-5 mb-4"></i>
+                        <div class="tile-item__title">GAME DEVELOPMENT</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-item">
+                    <div class="tile-item__body text-center">
+                        <i class="ft ft-exp-6 mb-4"></i>
+                        <div class="tile-item__title">MADE WITH LOVE</div>
+                        <div class="tile-item__text">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
+                            Aenean.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page__section page__section--background-2" id="teams">
+        <div class="container">
+            <h2 class="text-uppercase text-center mb-2">Meet our amazing team</h2>
+            <p class="text-center mb-3">
+                Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            </p>
+
+            <div class="dash mb-4 mb-md-5 mx-auto"></div>
+
+            <div class="row mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card ft-card">
+                        <div class="bg-white" style="height: 270px;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title ft-card__title">Semf Ucuk</h5>
+                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card ft-card">
+                        <div class="bg-white" style="height: 270px;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title ft-card__title">Dik Adalin</h5>
+                            <p class="card-text ft-card__subtitle">Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card ft-card">
+                        <div class="bg-white" style="height: 270px;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title ft-card__title">Card title</h5>
+                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 py-3">
+                    <div class="card ft-card">
+                        <div class="bg-white" style="height: 270px;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title ft-card__title">Card title</h5>
+                            <p class="card-text ft-card__subtitle">Ceo & founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center">
+                Become part of out dream team, let's join us!
+            </p>
+            <div class="text-center">
+                <button class="btn btn-outline-primary text-uppercase">We are hiring</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="page__section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <h2 class="text-uppercase mb-sm-0">Our works</h2>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="text-dark">See All Project in dribbble <span
+                                class="ft ft-right-arrow ml-1"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row works">
+                <div class="works__item bg-primary"></div>
+                <div class="works__item bg-secondary"></div>
+                <div class="works__item bg-dark"></div>
+                <div class="works__item bg-light"></div>
+                <div class="works__item bg-dark"></div>
+                <div class="works__item bg-secondary"></div>
+            </div>
+            <div class="row works">
+                <div class="works__item bg-light border-bottom"></div>
+                <div class="works__item bg-dark"></div>
+                <div class="works__item bg-info"></div>
+                <div class="works__item bg-secondary"></div>
+                <div class="works__item border-bottom bg-info"></div>
+                <div class="works__item bg-light"></div>
+            </div>
+        </div>
+        <div class="page__section">
+            <div class="container text-center">
+                <button class="btn btn-outline-primary text-uppercase">Load more</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="page__section page__section--background-3" id="reviews">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="ft ft-quotes"></span>
+            </div>
+
+            <div id="carousel-reviews"
+                class="row position-relative justify-content-center align-items-center flex-column">
+                <div class="col-lg-8 mb-5">
+
+                    <agile class="carousel-main" ref="main" :fade="true" :options="mainCarouselOptions"
+                        :as-nav-for="[refs.thumbnails]">
+                        <div v-for="slide in slides" :key="slide.id" class="slide text-center">
+                            {{slide.review}}
+                        </div>
+                    </agile>
+                </div>
+
+                <div class="col-xl-5 col-lg-6 col-md-8 mb-4">
+                    <agile class="carousel-thumbnails" ref="thumbnails" :as-nav-for="[refs.main]"
+                        :options="thumbnailOptions">
+
+                        <a class="carousel-thumbnails-item" href="#" @click.prevent @click="switchSlide(i)"
+                            v-for="(slide, i) in slides" :key="slide.id">
+                            <img class="carousel-thumbnails-item__img" :src="slide.path" :alt="slide.id">
+                        </a>
+
+                    </agile>
+                </div>
+
+                <div class="col-lg-5 text-center d-lg-none d-block">
+                    <button class="btn text-white ">
+                        <b-icon icon="chevron-left"></b-icon>
+                    </button>
+                    <button class="btn text-white">
+                        <b-icon icon="chevron-right"></b-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page__section page__section" id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center">GIVE US A GOOD NEWS</h2>
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-8">
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-primary px-4">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page__footer" id="footer">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg col-md-6 mb-3">
+                    <div class="mb-3 mb-lg-4">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </div>
+                    <p>
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                        vitae erat consequat auctor eu in elit.
+                    </p>
+                </div>
+                <div class="col-lg col-md-6 mb-5 mt-md-3">
+                    <h5 class="text-uppercase mb-lg-3">Our studio</h5>
+                    <ul class="nav flex-column row">
+                        <li class="nav-item nav-link media">
+                            <span class="ft ft-map-icon mr-3 mt-1"></span>
+                            <span class="media-body">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres -
+                                Jakarta Barat
+                                11480 - Indonesia</span>
+                        </li>
+                        <li class="nav-item nav-link media">
+                            <span class="ft ft-phone-icon mr-3 mt-1"></span>
+                            <span class="media-body">(+62) 21-2224 3333</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg col-md-7 mb-3">
+                    <h5 class="text-uppercase mb-lg-4 mb-md-3 mt-md-3">Stay in touch</h5>
+
+                    <form class="form-inline flex-nowrap mb-4">
+                        <input class="form-control form-control-dark w-100 mr-sm-2" type="email"
+                            placeholder="Subscribe our newsletter" aria-label="email">
+                        <button class="btn btn-subscribe my-2 my-sm-0 rounded-0" type="submit">
+                            <span class="ft ft-paper"></span>
+                        </button>
+                    </form>
+
+                    <div>
+                        <span class="ft ft-facebook mr-2"></span>
+                        <span class="ft ft-twitter mr-2"></span>
+                        <span class="ft ft-dribbble mr-2"></span>
+                        <span class="ft ft-instagram mr-2"></span>
+                        <span class="ft ft-gplus mr-2"></span>
+                        <span class="ft ft-youtube"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-lg-0 mb-5">
+                    <div class="row">
+                        <ul class="nav text-uppercase flex-column flex-lg-row">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Terms & condition</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-right mb-3">Copyright © 2015 - Tajem Creative</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
